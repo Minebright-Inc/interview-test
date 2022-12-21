@@ -7,7 +7,7 @@ Using JavaScript and React, your assignment is to implement a responsive signup 
 
 ### Brief
 
-The team at Minebright Inc. has provided you with designs for a new signup form! Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+The team at Minebright Inc. has provided you with designs for a new signup form! Your task is to build out the project to the designs inside the `/screenshots` folder. You will find both a mobile and a desktop version of the design to work to. You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ### Tasks
 
@@ -36,9 +36,6 @@ The team at Minebright Inc. has provided you with designs for a new signup form!
 
 Make sure to include all source code in the repository. 
 
-### CodeSubmit
-
-Please organize, design, test and document your code as if it were going into production - then push your changes to the master branch. After you have pushed your code, you may submit the assignment on the assignment page.
 
 All the best and happy coding,
 
