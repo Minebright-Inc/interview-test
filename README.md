@@ -13,14 +13,15 @@ The team at Minebright Inc. has provided you with designs for a new signup form!
 
 -   Implement assignment using:
     -   Language: **JavaScript**
-    -   Framework: **React**
+    -   (optional)Framework: **React, VueJS, Pure HTML, etc.**
 -   Your users should be able to:
     -   See hover states for all interactive elements on the page
     -   Receive an error message when the `form` is submitted if:
         -   Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
         -   The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_
--   You will find all the required assets in the `/images` folder. The assets are already optimized.
+-   You will find all the required assets in the `/screenshots` folder. The assets are already optimized.
 -   There is also a `style-guide.md` file, containing the information you'll need, such as color palette and fonts.
+-   POST request sent on submit
 
 ### Evaluation Criteria
 
