@@ -27,7 +27,6 @@ export const Formtemplate = () => {
       noValidate
       validated={validated}
       onSubmit={handleSubmit}
-      encType="application/x-www-form-urlencoded"
       method="post"
     >
       <div className="mb-4">

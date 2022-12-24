@@ -1,7 +1,7 @@
 import "./App.css";
 import { Leftpart } from "./components/Leftpart";
 import { Rightpart } from "./components/Rightpart";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
 
