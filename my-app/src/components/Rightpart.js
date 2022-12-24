@@ -5,12 +5,22 @@ export const Rightpart = () => {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
+    const { firstname, lastname, email, password } = event.target.elements;
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
     }
     setValidated(true);
+    fetch("/", {
+      method: "POST",
+      body: JSON.stringify({
+        firstname: firstname.value,
+        lastname: lastname.value,
+        email: email.value,
+        password: password.value,
+      }),
+    });
   };
 
   return (
@@ -85,11 +95,13 @@ export const Rightpart = () => {
           </div>
         </div>
         <div className="mb-2">
-          <button className="btn w-100">CLAIM YOUR FREE TRIAL</button>
+          <button className="btn w-100">
+            <div className="btntext">CLAIM YOUR FREE TRIAL</div>
+          </button>
         </div>
         <div className="w-100 text-muted text-center">
           <small className="">
-            By clicking the button, you are agreeing to our
+            By clicking the button, you are agreeing to our&nbsp;
             <a className="text-danger" href="{}">
               Terms and Services
             </a>
