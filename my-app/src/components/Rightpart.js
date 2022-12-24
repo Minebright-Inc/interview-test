@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 
 export const Rightpart = () => {
   return (
-    <Col md={6} className="col-md-6">
+    <Col md={6} className="">
       <div className="trail text-center mb-4">
         <p className="mb-0">
           <strong>Try it free 7 days</strong> then $20/mo. thereafter
