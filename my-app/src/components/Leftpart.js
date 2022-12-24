@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import "../App.css";
 export const Leftpart = () => {
   return (
