@@ -19,9 +19,9 @@ body {
   border-radius: 10px;
   padding: 20px;
 }
-form {
+Form {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 40px;
 }
 .btn {
@@ -30,4 +30,8 @@ form {
 }
 .form-control {
   padding: 20px !important;
+}
+.invalid-feedback {
+  font-weight: 900;
+  text-align: right !important;
 }

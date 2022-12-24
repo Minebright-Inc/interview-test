@@ -1,27 +1,47 @@
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Col } from "react-bootstrap";
-
 export const Rightpart = () => {
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    setValidated(true);
+  };
+
   return (
-    <Col md={6} className="">
+    <Col md={6} className="col-md-6">
       <div className="trail text-center mb-4">
         <p className="mb-0">
           <strong>Try it free 7 days</strong> then $20/mo. thereafter
         </p>
       </div>
-      <Form method="post">
+      <Form
+        noValidate
+        validated={validated}
+        onSubmit={handleSubmit}
+        encType="application/x-www-form-urlencoded"
+        method="post"
+      >
         <div className="mb-4">
-          <Form.Group className="mb-4">
-            <input
+          <div className="mb-4">
+            <Form.Control
               className="w-100 form-control"
               type="text"
               name="firstname"
-              id="first-Name"
+              id="firstname"
               placeholder="First Name"
               aria-label="firstname"
               required
             />
-          </Form.Group>
+            <Form.Control.Feedback type="invalid" className="invalid-feedback ">
+              First Name cannot be empty
+            </Form.Control.Feedback>
+          </div>
           <div className="mb-4">
             <Form.Control
               className="w-100 form-control"
@@ -32,6 +52,9 @@ export const Rightpart = () => {
               aria-label="lastname"
               required
             />
+            <Form.Control.Feedback type="invalid" className="invalid-feedback ">
+              Last Name cannot be empty
+            </Form.Control.Feedback>
           </div>
           <div className="mb-4">
             <input
@@ -43,6 +66,9 @@ export const Rightpart = () => {
               aria-label="email"
               required
             />
+            <Form.Control.Feedback type="invalid" className="invalid-feedback ">
+              Looks like this is not an email
+            </Form.Control.Feedback>
           </div>
           <div className="mb-4">
             <input
@@ -53,6 +79,9 @@ export const Rightpart = () => {
               placeholder="Password"
               required
             />
+            <Form.Control.Feedback type="invalid" className="invalid-feedback ">
+              Password cannot be empty
+            </Form.Control.Feedback>
           </div>
         </div>
         <div className="mb-2">
